@@ -10,6 +10,7 @@ function theme() {
       white: "#FFFFFF",
       black: "#191919;",
       primary: "#4A8EFF",
+      background: " #1A1A1A",
     },
   };
 }
