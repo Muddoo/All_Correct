@@ -77,25 +77,34 @@ const Footer = () => {
       <SocialWrapper>
         <SocialItem>
           <Image src={facebookLogo} width={18} height={20} />
-          <Link href="/">
+          <Link
+            href="https://www.facebook.com/allcorrectgames?ref=aymt_homepage_panel"
+            target="_blank"
+            rel="noopener">
             <a>Facebook</a>
           </Link>
         </SocialItem>
         <SocialItem>
           <Image src={linkedinLogo} width={18} height={20} />
-          <Link href="/">
+          <Link href="https://medium.com/@allcorrect" target="_blank" rel="noopener">
             <a>Medium</a>
           </Link>
         </SocialItem>
         <SocialItem>
           <Image src={mediumLogo} width={18} height={20} />
-          <Link href="/">
+          <Link
+            href="https://www.linkedin.com/company/allcorrectgames/"
+            target="_blank"
+            rel="noopener">
             <a>Linkedin</a>
           </Link>
         </SocialItem>
         <SocialItem>
           <Image src={rssLogo} width={18} height={20} />
-          <Link href="/">
+          <Link
+            href="http://feeds.feedburner.com/allcorrectgamescominsights"
+            target="_blank"
+            rel="noopener">
             <a>RSS</a>
           </Link>
         </SocialItem>
