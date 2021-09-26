@@ -55,7 +55,7 @@ const Footer = () => {
               <a>Join us</a>
             </Link>
           </NavigationItem>
-          <NavigationItem color="primary">
+          <NavigationItem color="blue">
             <Link href="/contact">
               <a>Get in touch</a>
             </Link>
