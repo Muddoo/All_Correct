@@ -55,8 +55,10 @@ const Footer = () => {
               <a>Join us</a>
             </Link>
           </NavigationItem>
-          <NavigationItem className="color">
-            <Link href="/contact">Get in touch</Link>
+          <NavigationItem color="primary">
+            <Link href="/contact">
+              <a>Get in touch</a>
+            </Link>
           </NavigationItem>
         </NavigationWrapper>
       </CompanyWrapper>

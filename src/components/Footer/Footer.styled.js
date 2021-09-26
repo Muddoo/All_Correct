@@ -1,16 +1,38 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 60px;
+  padding: 60px 40px;
+  position: relative;
 `;
 
 export const CompanyWrapper = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: space-between;
   margin-bottom: 40px;
+`;
+
+export const Title = styled.div`
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 63px;
+  letter-spacing: -0.01em;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  span {
+    /*  Color the span with theme.primary color */
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: ${({ theme }) => theme.colors.white};
+    width: 647px;
+  }
 `;
 
 export const NavigationWrapper = styled.ul`
@@ -34,37 +56,13 @@ export const NavigationItem = styled.li`
 
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.white};
-  }
-`;
-
-export const Title = styled.div`
-  font-weight: 900;
-  font-size: 52px;
-  line-height: 63px;
-  letter-spacing: -0.01em;
-  max-width: 647px;
-  padding-right: 150px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  span {
-    /*  Color the span with theme.primary color */
-    color: ${({ theme }) => theme.colors.primary};
-  }
-
-  p {
-    margin: 0;
-    padding: 0;
-    color: ${({ theme }) => theme.colors.white};
+    color: ${(props) => props.theme.colors[props.color] || props.theme.colors.white};
   }
 `;
 
 export const AddressWrapper = styled.div`
   font-size: 16px;
   line-height: 20px;
-  /* or 125% */
   letter-spacing: -0.01em;
   color: ${({ theme }) => theme.colors.white};
   display: flex;
@@ -87,7 +85,6 @@ export const AddressWrapper = styled.div`
 
 export const Copyright = styled.div`
   display: flex;
-  /* align-items: center; */
   justify-content: flex-start;
   font-size: 16px;
   line-height: 20px;
@@ -106,29 +103,31 @@ export const Copyright = styled.div`
 export const SocialWrapper = styled.ul`
   padding: 0;
   margin: 0;
-  display: inline;
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  align-items: baseline;
   list-style-type: none;
-  justify-content: flex-end;
+  position: absolute;
+  right: 50px;
+  bottom: 60px;
 `;
 
 export const SocialItem = styled.li`
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height, or 125% */
   letter-spacing: -0.01em;
   color: ${({ theme }) => theme.colors.white};
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 22px;
+  margin: 0 0 22px;
   max-width: 107px;
   padding: 0;
 
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.white};
-    padding-left: 13px;
+    padding: 0 0 0 13px;
   }
 `;

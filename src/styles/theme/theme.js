@@ -4,7 +4,7 @@ import GlobalStyles from "../global.styles";
 function theme() {
   return {
     fonts: {
-      roboto: "Inter",
+      inter: "Inter, sans-serif",
     },
     colors: {
       white: "#FFFFFF",

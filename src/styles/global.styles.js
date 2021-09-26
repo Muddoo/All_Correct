@@ -30,6 +30,8 @@ const GlobalStyles = createGlobalStyle`
     -webkit-transition: all 350ms ease-in-out;
     transition: all 350ms ease-in-out;
     background-color: ${({ theme }) => theme.colors.background};
+    max-width: 1440px;
+    width: 100%;
   }
 `;
 
