@@ -4,13 +4,12 @@ import GlobalStyles from "../global.styles";
 function theme() {
   return {
     fonts: {
-      roboto: "Roboto, sans-serif",
-      condensed: "Roboto Condensed, sans-serif",
+      roboto: "Inter",
     },
     colors: {
       white: "#FFFFFF",
-      black: "#000000;",
-      primary: "#f00"
+      black: "#191919;",
+      primary: "#4A8EFF",
     },
   };
 }
